@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | UTB E-Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="top-header">
+        <div class="contact-info">
+            <span><i class="fa-solid fa-phone"></i> Call us: +250 788 320 688</span>
+            <span><i class="fa-solid fa-envelope"></i> Email: info@utb.ac.rw</span>
+        </div>
+        <div class="login-link">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#">Log In</a>
+        </div>
+    </header>
+
+    <div class="sub-top-bar">
+        <div class="logo-area">
+            <img src="logo export layouts.png" alt="UTB Logo">
+        </div>
+       <nav class="main-menu">
+            <a href="#">Home</a>
+            <a href="#">UTB MIS</a>
+            <a href="#">UTB Website</a>
+            
+            <div class="dropdown">
+                <a href="#" class="dropbtn">E-Library <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Online Catalog</a>
+                    <a href="#">E-Journals</a>
+                    <a href="#">Past Papers</a>
+                    <a href="#">Student Thesis</a>
+                </div>
+            </div>
+            <a href="#">INNODIP</a>
+        </nav>
+    </div>
+
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('UTB 1.JPG');">
+                <div class="content">
+                    <h1>A Campus Community Like No Other</h1>
+                    <p>Students and Staff Working Together to Foster Growth.</p>
+                    <button class="btn-red">Know More</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('UTB 2.JPG');">
+                <div class="content">
+                    <h1>Hands-On Experience</h1>
+                    <p>Tourism Students Exploring Adventure.</p>
+                    <button class="btn-red">Know More</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('UTB 3.JPG');">
+                <div class="content">
+                    <h1>Training Eyes for Adventure</h1>
+                    <p>UTB Students Gaining Hands-On Experience in Tourism and Conservation.</p>
+                    <button class="btn-red">Know More</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('UTB 4.JPG');">
+                <div class="content">
+                    <h1>Crafting Culinary Expertise</h1>
+                    <p>Experience in Culinary Arts and Hospitality.</p>
+                    <button class="btn-red">Know More</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('UTB 10.jpeg');">
+                <div class="content">
+                    <h1>Students at Rubavu Campus</h1>
+                    <p>Embrace Learning, Friendship, and a Journey Towards Success.</p>
+                    <button class="btn-red">Know More</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('UTB 7.JPG');">
+                <div class="content">
+                    <h1>Dedicated to Learning</h1>
+                    <p>Growth in a Dynamic Digital Environment.</p>
+                    <button class="btn-red">Know More</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('UTB 9.jpg');">
+                <div class="content">
+                    <h1>The Library</h1>
+                    <p>A Place to Cultivate Knowledge, Curiosity, and Lifelong Learning.</p>
+                    <button class="btn-red">Know More</button>
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+
+    <section class="course-section">
+        <div class="search-container">
+            <input type="text" placeholder="Search courses" class="search-input">
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="categories-header">
+            <h2 class="section-title">Course categories</h2>
+            <button id="toggleAllBtn" class="expand-btn">
+                <i class="fa-solid fa-chevron-right"></i> <span id="toggleText">Expand all</span>
+            </button>
+        </div>
+
+        <div class="main-grid">
+            
+            <div class="accordion-card top-level">
+                <button class="accordion-header">
+                    <div class="acc-left"><i class="fa-solid fa-caret-right arrow"></i> <span class="acc-title">Kigali Campus</span></div>
+                    <span class="badge">6</span>
+                </button>
+                <div class="panel-content">
+                    <div class="nested-grid">
+                        
+                        <div class="accordion-card">
+                            <button class="accordion-header">
+                                <div class="acc-left"><i class="fa-solid fa-caret-right arrow"></i> <span class="acc-title">2024-2025 | January Intake</span></div>
+                            </button>
+                            <div class="panel-content">
+                                <div class="nested-grid">
+                                    <div class="accordion-card">
+                                        <button class="accordion-header">
+                                            <div class="acc-left"><i class="fa-solid fa-caret-right arrow"></i> <span class="acc-title">BBM</span></div>
+                                        </button>
+                                        <div class="panel-content list-view">
+                                            <a href="#" class="year-item"><i class="fa-solid fa-chevron-right"></i> Year 1 <span class="count">13</span></a>
+                                            <a href="#" class="year-item"><i class="fa-solid fa-chevron-right"></i> Year 2 <span class="count">10</span></a>
+                                            <a href="#" class="year-item"><i class="fa-solid fa-chevron-right"></i> Year 3 <span class="count">11</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-card">
+                                        <button class="accordion-header">
+                                            <div class="acc-left"><i class="fa-solid fa-caret-right arrow"></i> <span class="acc-title">BIT</span></div>
+                                        </button>
+                                        <div class="panel-content list-view">
+                                            <a href="#" class="year-item"><i class="fa-solid fa-chevron-right"></i> Year 1 <span class="count">20</span></a>
+                                            <a href="#" class="year-item"><i class="fa-solid fa-chevron-right"></i> Year 2 <span class="count">15</span></a>
+                                            <a href="#" class="year-item"><i class="fa-solid fa-chevron-right"></i> Year 3 <span class="count">12</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-card">
+                                        <button class="accordion-header">
+                                            <div class="acc-left"><i class="fa-solid fa-caret-right arrow"></i> <span class="acc-title">CD</span></div>
+                                        </button>
+                                        <div class="panel-content list-view">
+                                            <a href="#" class="year-item"><i class="fa-solid fa-chevron-right"></i> Year 1</a>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-card">
+                                        <button class="accordion-header">
+                                            <div class="acc-left"><i class="fa-solid fa-caret-right arrow"></i> <span class="acc-title">CE</span></div>
+                                        </button>
+                                        <div class="panel-content list-view">
+                                            <a href="#" class="year-item"><i class="fa-solid fa-chevron-right"></i> Year 1</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-card">
+                            <button class="accordion-header">
+                                <div class="acc-left"><i class="fa-solid fa-caret-right arrow"></i> <span class="acc-title">2024-2025 | May Intake</span></div>
+                            </button>
+                            <div class="panel-content">
+                                <div class="nested-grid">
+                                    <div class="accordion-card">
+                                        <button class="accordion-header">
+                                            <div class="acc-left"><i class="fa-solid fa-caret-right arrow"></i> <span class="acc-title">BBM</span></div>
+                                        </button>
+                                        <div class="panel-content list-view">
+                                            <a href="#" class="year-item"><i class="fa-solid fa-chevron-right"></i> Year 1 <span class="count">1</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-card">
+                            <button class="accordion-header">
+                                <div class="acc-left"><i class="fa-solid fa-caret-right arrow"></i> <span class="acc-title">2025-2026 | September Intake</span></div>
+                            </button>
+                            <div class="panel-content"><p style="padding:10px; font-size:13px;">No courses available yet.</p></div>
+                        </div>
+
+                        <div class="accordion-card">
+                            <button class="accordion-header">
+                                <div class="acc-left"><i class="fa-solid fa-caret-right arrow"></i> <span class="acc-title">2025-2026 | January Intake</span></div>
+                                <span class="badge">1</span>
+                            </button>
+                            <div class="panel-content"><p style="padding:10px; font-size:13px;">Loading data...</p></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-card top-level">
+                <button class="accordion-header">
+                    <div class="acc-left"><i class="fa-solid fa-caret-right arrow"></i> <span class="acc-title">Rubavu Campus</span></div>
+                    <span class="badge">3</span>
+                </button>
+                <div class="panel-content">
+                    <div class="nested-grid">
+                         <div class="accordion-card">
+                            <button class="accordion-header">
+                                <div class="acc-left"><i class="fa-solid fa-caret-right arrow"></i> <span class="acc-title">2024-2025 | January Intake</span></div>
+                            </button>
+                            <div class="panel-content list-view">
+                                <a href="#" class="year-item"><i class="fa-solid fa-chevron-right"></i> Tourism</a>
+                                <a href="#" class="year-item"><i class="fa-solid fa-chevron-right"></i> Hospitality</a>
+                            </div>
+                        </div>
+                        <div class="accordion-card">
+                            <button class="accordion-header">
+                                <div class="acc-left"><i class="fa-solid fa-caret-right arrow"></i> <span class="acc-title">2024-2025 | May Intake</span></div>
+                            </button>
+                            <div class="panel-content list-view">
+                                <a href="#" class="year-item"><i class="fa-solid fa-chevron-right"></i> Tourism</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-card top-level">
+                <button class="accordion-header">
+                    <div class="acc-left"><i class="fa-solid fa-caret-right arrow"></i> <span class="acc-title">Ruhango Campus</span></div>
+                </button>
+                <div class="panel-content">
+                    <p style="padding:15px; color:#777; font-size:14px;">No courses available at this moment.</p>
+                </div>
+            </div>
+        </div>
+       
+        <div class="announcements-container">
+            <h2 class="section-title">Site announcements</h2>
+
+            <div class="announcement-card">
+                <div class="post-header">
+                    <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                    <div class="post-meta">
+                        <a href="#" class="post-subject">INDUSTRIAL ATTACHMENT HANDBOOK</a>
+                        <span class="post-author">by <span class="author-name">Ndatimana Samuel</span> - Friday, 25 April 2025, 10:04 AM</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p class="post-heading">OBJECTIVES OF INDUSTRIAL ATTACHMENT</p>
+                    <p>Industrial Attachment will be carried out in two phases. All undergraduate students shall proceed for their first phase of Industrial Attachment during the third trimester of the second year for a minimum duration of three months on a full-time basis.</p>
+                    <div class="tags-section">
+                        <span class="tag-label">Tags:</span>
+                        <a href="#" class="tag-pill">handbook</a>
+                        <a href="#" class="tag-pill">industrial attachment</a>
+                    </div>
+                    <div class="attachment-section">
+                        <a href="INDUSTRIAL ATTACHMENT HANDBOOK.pdf" class="file-link">
+                            <i class="fa-regular fa-file-pdf"></i> INDUSTRIAL ATTACHMENT HANDBOOK.pdf
+                        </a>
+                    </div>
+                </div>
+
+
+                
+                <div class="post-footer">
+                    <a href="#">Permalink</a>
+                    <a href="#">Discuss this topic (0 replies so far)</a>
+                </div>
+            </div>
+
+            <div class="announcement-card">
+                <div class="post-header">
+                    <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                    <div class="post-meta">
+                        <a href="#" class="post-subject">INDUSTRIAL ATTACHMENT LOGBOOK</a>
+                        <span class="post-author">by <span class="author-name">Ndatimana Samuel</span> - Tuesday, 8 April 2025, 4:50 PM</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p class="post-heading">INDUSTRIAL ATTACHMENT LOGBOOK</p>
+                    <p>During an Industrial Attachment, one may have different learning experiences. These experiences tend to get mixed up, and therefore, fade away with time. The personal log book will help you benefit as much as possible from your Industrial Attachment.</p>
+                    <div class="tags-section">
+                        <span class="tag-label">Tags:</span>
+                        <a href="#" class="tag-pill">logbook</a>
+                        <a href="#" class="tag-pill">industrial attachment</a>
+                    </div>
+                    <div class="attachment-section">
+                        <a href="INDUSTRIAL ATTACHMENT LOGBOOK.docx" class="file-link">
+                            <i class="fa-regular fa-file-word"></i> INDUSTRIAL ATTACHMENT LOGBOOK.docx
+                        </a>
+                    </div>
+                </div>
+                <div class="post-footer">
+                    <a href="#">Permalink</a>
+                    <a href="#">Discuss this topic (0 replies so far)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ................................................................................................................................................................. -->
+ 
+ <div class="accordion-container">
+
+
+  <details open>
+    <summary>
+      <span class="icon"></span>
+      Kigali Campus
+    </summary>
+    <div class="content">
+      
+      <details>
+        <summary>
+          <span class="icon"></span>
+          2024-2025 | January Intake
+        </summary>
+        <div class="content">Content for January goes here...</div>
+      </details>
+
+      <details>
+        <summary>
+          <span class="icon"></span>
+          2024-2025 | May Intake
+        </summary>
+        <div class="content">Content for May goes here...</div>
+      </details>
+
+      <details>
+        <summary>
+          <span class="icon"></span>
+          2025-2026 | September Intake
+        </summary>
+        <div class="content">Content for September goes here...</div>
+      </details>
+
+    </div>
+  </details>
+
+<details open>
+    <summary>
+      <span class="icon"></span>
+      Rubavu Campus
+    </summary>
+    <div class="content">
+      
+      <details>
+        <summary>
+          <span class="icon"></span>
+          2024-2025 | January Intake
+        </summary>
+        <div class="content">Content for January goes here...</div>
+      </details>
+
+      <details>
+        <summary>
+          <span class="icon"></span>
+          2024-2025 | May Intake
+        </summary>
+        <div class="content">Content for May goes here...</div>
+      </details>
+
+      <details>
+        <summary>
+          <span class="icon"></span>
+          2025-2026 | September Intake
+        </summary>
+        <div class="content">Content for September goes here...</div>
+      </details>
+
+    </div>
+  </details>
+
+  <details open>
+    <summary>
+      <span class="icon"></span>
+      Ruhango Campus
+    </summary>
+    <div class="content">
+      
+      <details>
+        <summary>
+          <span class="icon"></span>
+          2024-2025 | January Intake
+        </summary>
+        <div class="content">Content for January goes here...</div>
+      </details>
+
+      <details>
+        <summary>
+          <span class="icon"></span>
+          2024-2025 | May Intake
+        </summary>
+        <div class="content">Content for May goes here...</div>
+      </details>
+
+      <details>
+        <summary>
+          <span class="icon"></span>
+          2025-2026 | September Intake
+        </summary>
+        <div class="content">Content for September goes here...</div>
+      </details>
+
+    </div>
+  </details>
+   </div>
+ <!-- ..................................................................................................................................................................... -->
+
+    <section class="available-courses-section">
+        <div class="courses-header">
+            <h2 class="section-title">Available courses</h2>
+        </div>
+        
+        <div class="carousel-container">
+            <button class="nav-btn prev" onclick="scrollCourses(-1)">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+
+            <div class="courses-track" id="coursesTrack">
+                <div class="course-card">
+                    <div class="card-image special-img">
+                        <div class="tags-overlay">
+                            <span class="tag blue">decision making</span>
+                            <span class="tag yellow">Market analysis</span>
+                            <span class="tag green">ICT development</span>
+                            <span class="tag red">Risk management</span>
+                            <span class="tag green-btm">innovation and...</span>
+                        </div>
+                        <div class="course-main-text">
+                            Business<br>Research<br>Methods
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="course-code">BM8323 - Research Methods in Business</h3>
+                        <p class="course-desc">Business Research: Methods, Types & Examples</p>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image placeholder-camera">
+                        <div class="camera-circle"><i class="fa-solid fa-camera"></i></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Organisational Behaviour and Leadership</h3>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image placeholder-camera">
+                        <div class="camera-circle"><i class="fa-solid fa-camera"></i></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Software Engineering</h3>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image placeholder-camera">
+                        <div class="camera-circle"><i class="fa-solid fa-camera"></i></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Data Structures and Algorithms</h3>
+                    </div>
+                </div>
+                 <div class="course-card">
+                    <div class="card-image placeholder-camera">
+                        <div class="camera-circle"><i class="fa-solid fa-camera"></i></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Web Technology</h3>
+                    </div>
+                </div>
+            </div>
+
+            <button class="nav-btn next" onclick="scrollCourses(1)">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+        </div>
+    </section>
+    
+    <footer class="main-footer">
+        <div class="footer-inner">
+            <div class="footer-col col-1">
+                <div class="footer-logo-box">
+                    <img src="logo export layouts.png" alt="UTB Logo">
+                </div>
+                <h4>UTB E-Learning: Advancing Education in Hospitality, Tourism, Technology, and Business</h4>
+                <p>UTB is committed to excellence in providing quality teaching, research, consultancy, and community service. Through its E-learning platform, UTB delivers...</p>
+            </div>
+
+            <div class="footer-col col-2">
+                <h3>See More</h3>
+                <ul class="footer-links">
+                    <li><a href="#">UTB Website</a></li>
+                    <li><a href="#">UTB MIS</a></li>
+                    <li><a href="#">INNODIP</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col col-3">
+                <h3>Contact Us</h3>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>KK 31 Ave, Kigali | UTB, Rebero Building</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Phone : +250 788 320 688 , Help: +250 781 110 784</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email : <a href="mailto:info@utb.ac.rw">info@utb.ac.rw</a></span>
+                </div>
+            </div>
+
+            <div class="footer-col col-4">
+                <h3>Follow Us</h3>
+                <div class="social-grid">
+                    <a href="#" class="social-box"><i class="fa-solid fa-x"></i></a> 
+                    <a href="#" class="social-box"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-box"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-box"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="social-box"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2026 - UTB. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="floating-btns">
+        <a href="#" class="float-btn up-arrow"><i class="fa-solid fa-chevron-up"></i></a>
+        <a href="#" class="float-btn help-q"><i class="fa-solid fa-question"></i></a>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
